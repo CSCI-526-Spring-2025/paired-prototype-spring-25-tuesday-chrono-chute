@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class player_movemets : MonoBehaviour
 {
-    public float moveSpeed = 5f;   // Speed for left/right movement
+    public float moveSpeed = 2f;   // Speed for left/right movement
     public float fallSpeed = 2f;   // Constant falling speed
 
     private Rigidbody2D rb;
