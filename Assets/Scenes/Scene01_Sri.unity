@@ -663,6 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1655524408}
+  switchScript: {fileID: 1655524414}
   xBoundary: 1.7
 --- !u!1 &347596923
 GameObject:
@@ -2049,6 +2050,7 @@ GameObject:
   - component: {fileID: 1655524409}
   - component: {fileID: 1655524413}
   - component: {fileID: 1655524412}
+  - component: {fileID: 1655524414}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2209,6 +2211,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1655524414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655524408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1dcce48571314158bac5b16bf2acddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPresent: 0
+  switchAmount: 20
 --- !u!1 &1679560123
 GameObject:
   m_ObjectHideFlags: 0
