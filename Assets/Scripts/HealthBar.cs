@@ -1,36 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Image healthBarFill; // Assign the brighter health bar in the inspector
-    public float maxHealth = 100f;
-    private float currentHealth;
+    public Slider slider;
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetMaxHealth(float health)
     {
-        currentHealth = maxHealth;
-        UpdateHealthBar();
+        slider.maxValue = health;
+        slider.value = health;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetHealth(float health)
     {
-
-    }
-
-    public void TakeDamage(float damage)
-    {
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        UpdateHealthBar();
-    }
-
-    void UpdateHealthBar()
-    {
-        healthBarFill.fillAmount = currentHealth / maxHealth;
+        slider.value = health;
     }
 }
