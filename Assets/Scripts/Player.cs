@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public TMP_Text gameOverText;
     public TMP_Text gameWinText;
+    private GameObject parachute;
 
     [Header("Health")]
     public float maxHealth = 5;
@@ -41,11 +42,19 @@ public class Player : MonoBehaviour
         {
             originalColor = spriteRenderer.color;
         }
+
+        parachute = transform.Find("Parachute").gameObject;
     }
 
     private void Update()
     {
         Move();
+        RenderParachute();
+    }
+
+    private void RenderParachute()
+    {
+        parachute.SetActive(switchScript.isPresent);
     }
 
     private void Move()
