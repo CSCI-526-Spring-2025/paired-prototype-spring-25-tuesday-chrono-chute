@@ -12,3 +12,6 @@ A freefall game where you time travel between the past and present in order to a
 
 ## Game Link
 https://csci-526-spring-2025.github.io/paired-prototype-spring-25-tuesday-chrono-chute/Game/index.html
+
+## Gameplay Video Link
+https://youtu.be/XKQGJvcTLQo
