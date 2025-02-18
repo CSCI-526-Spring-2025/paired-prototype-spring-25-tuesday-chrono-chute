@@ -11,3 +11,4 @@ A freefall game where you time travel between the past and present in order to a
 | Christina Wu             | cwu40309@usc.edu | christinaawuu   |
 
 ## Game Link
+https://csci-526-spring-2025.github.io/paired-prototype-spring-25-tuesday-chrono-chute/Game/index.html
